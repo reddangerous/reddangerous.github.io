@@ -19,7 +19,7 @@ function setTheme(mode){
     document.getElementById('theme-style').href='main.css';
   }
   if(mode=='blue'){
-    document.getElementById('theme-style').href='Blue.css';
+    document.getElementById('theme-style').href='blue.css';
   }
   if(mode=='green'){
     document.getElementById('theme-style').href='Green.css';
