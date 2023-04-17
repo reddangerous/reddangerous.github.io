@@ -49,6 +49,13 @@ ul{
   background-color: var(--mainColor);
   border-bottom:1px solid var(--boarderColor);
   overflow: auto;
+  height: 840px;
+}
+.s10{
+  background-color: var(--mainColor);
+  border-bottom:1px solid var(--boarderColor);
+  margin-top: 0px;
+  border-top: 1px solid var(--boarderColor);
 
 }
 .s2{
@@ -60,14 +67,15 @@ ul{
 .main-container{
   width: 1200px;
   margin: 0 auto;
+  
 }
 .greeting-wrapper{
   display: block;
   text-align: center;
   align-content: center;
   min-height: 10em;
-  max-height: 15em;
-  padding-bottom: 25px;
+  max-height: 55em;
+  padding-bottom: 10px;
   
 
 }
@@ -92,21 +100,33 @@ ul{
   grid-template-areas:
     'Nav-wrapper Nav-wrapper'
     'left-column right-column'
-  ;}
+  ;
+}
+  
 .Nav-wrapper{
   border-radius: 5px 5px 0 0;
   grid-area: Nav-wrapper;
   border-bottom: 1px solid var(--boarderColor);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  
   justify-content: space-between;
   align-items: center;
   background: var(--mainColor);
 
 }
+footer{
+  background: var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 #Navigation{
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
 }
 #Navigation li{
   display: inline-block;
@@ -186,6 +206,7 @@ ul{
   font-size: 12px;
   font-style: italic;
   text-align: center;
+  color:  #17a2b8;;
 }
 
 .right-column{
@@ -193,13 +214,12 @@ ul{
   grid-area: right-column;
   display: grid;
   align-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 #preview-shadow{
   background-color: var(--previewShadow);
-  width: 300px;
-  height: 260px;
+  width: 260px;
   padding-left: 30px;
   padding-top: 30px;
 }
@@ -209,6 +229,8 @@ ul{
   background-color: var(--previewBg);
   padding: 15px;
   position: relative;
+  overflow-x: hidden;
+   overflow-y: hidden;
 }
 .corners{
   width: 7px;
@@ -268,7 +290,8 @@ i{
   grid-template-columns: repeat(auto-fit, 320px);
   gap: 20px;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  overflow: hidden;
 
 }
 .post{
@@ -316,7 +339,6 @@ line-height: 2.7em;
 #contact-form textarea{
   min-height: 100px;
   font-size: 14px;
-
 }
 .input-field{
   width: 100%;
@@ -354,7 +376,20 @@ line-height: 2.7em;
       'right-column'
       
     ;
+    
   }
+   .s1{
+ background-color: var(--mainColor);
+    border-bottom: 1px solid var(--boarderColor);
+    overflow: hidden;
+    height: 1400px;}
+    .s10{
+  background-color: var(--mainColor);
+  border-bottom:1px solid var(--boarderColor);
+  overflow: auto;
+  height: 1200px;
+}
+ 
   #Navigation li{
     display: flex;
     flex-direction: row;
@@ -364,7 +399,7 @@ line-height: 2.7em;
   }
   .greeting-wrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: medium;
     
   }
@@ -380,6 +415,14 @@ line-height: 2.7em;
     flex-wrap: wrap;
     justify-content: center;
     
+  }
+  .post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+    overflow: hidden;
   }
   
 }
@@ -408,7 +451,24 @@ line-height: 2.7em;
     
     justify-content: center;
   }
+.intro-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-areas:
+      'Nav-wrapper'
+      'left-column'
+      'right-column'
+      
+    ;
+  }
+  .s1{
+  background-color: var(--mainColor);
+  border-bottom:1px solid var(--boarderColor);
+  overflow: hidden;
+  height: 1500px;
 }
+}
+
 @media screen and (max-width:400px) {
   .profession{
     line-height: 10px;
@@ -420,4 +480,30 @@ line-height: 2.7em;
     
     justify-content: center;
   }
+  #navigation li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+  }
+  .s1{
+ background-color: var(--mainColor);
+    border-bottom: 1px solid var(--boarderColor);
+    overflow: hidden;
+    height: 1340px;
 }
+.intro-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-areas:
+      'Nav-wrapper'
+      'left-column'
+      'right-column'
+      
+    ;
+  }
+}
+
+
