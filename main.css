@@ -339,6 +339,8 @@ line-height: 2.7em;
 #contact-form textarea{
   min-height: 100px;
   font-size: 14px;
+  color: var(--mainText);
+  background-color: var(--secondaryColor);
 }
 .input-field{
   width: 100%;
@@ -348,6 +350,7 @@ line-height: 2.7em;
   border-radius: 5px;
   border: 1px solid var(--boarderColor);
   font-size: 14px;
+  color: var(--mainText);
 }
 #Submit-btn{
   margin-top: 10px;
