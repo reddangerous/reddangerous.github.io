@@ -263,7 +263,12 @@ footer{
   padding-bottom: 50px;
   padding-top: 50px;
   gap: 100px;
-
+  
+}
+.aboutme{
+  border: 1.5px solid #17a2b8;
+  background-color: var(--previewBg);
+  padding: 20px;
 }
 
 #skills{
@@ -390,7 +395,7 @@ line-height: 2.7em;
   background-color: var(--mainColor);
   border-bottom:1px solid var(--boarderColor);
   overflow: auto;
-  height: 1241px;
+  height: 1251px;
 }
  
   #Navigation li{
